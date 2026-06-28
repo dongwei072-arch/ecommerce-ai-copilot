@@ -1,0 +1,16 @@
+# Web 框架与前端可视化
+streamlit>=1.28.0
+
+# 数据处理与科学计算
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 大模型 API 调用
+openai>=1.10.0
+
+# 环境变量加载
+python-dotenv>=1.0.0
+
+# 向量检索与本地模型 (RAG架构核心)
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
