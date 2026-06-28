@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🛒 E-Commerce AI Copilot
 
 基于大语言模型（LLM）与 Agentic Workflow 构建的企业级电商数据运营与风控工作台
@@ -27,12 +25,13 @@
 
 ## 🧠 系统架构 (Workflow)
 
-> **💡 提示**: 本系统采用 Planner (全局规划) + Reasoner (逻辑推理) 双脑架构，所有业务指标计算由底层硬编码的 Python 沙箱严格接管，实现 AI 与严谨业务数据的完美隔离。
+> **💡 提示**: 本系统采用 Planner (全局规划) + Reasoner (逻辑推理) 双脑架构，实现 AI 与严谨业务数据的隔离。
 
+```text
 ┌──────────────────────────────────────────────────┐
-│                  Web UI (Streamlit)              │
-│                  main_app.py (:8501)             │
-│          交互反馈 · 任务追踪 · 实时风控预警      │
+│              Web UI (Streamlit)                  │
+│              main_app.py (:8501)                 │
+│      交互反馈 · 任务追踪 · 实时风控预警          │
 └─────────────────────────┬────────────────────────┘
                           │ 异步事件流
 ┌─────────────────────────▼────────────────────────┐
@@ -51,7 +50,6 @@
 │  业务数据沙箱 (Sandbox)                          │
 │  CSV/SQL 处理 · 指标计算 · 熔断判定              │
 └──────────────────────────────────────────────────┘
-
 ---
 
 ## ✨ 核心特性
@@ -89,10 +87,10 @@ ecommerce-ai-copilot/
 ---
 
 ## 📸 效果展示
+<img width="1916" height="914" alt="96b8f824c173362310fdd8d28add9a4f" src="https://github.com/user-attachments/assets/4ad895fb-a16c-49a2-8b0a-b2476a899cd7" />
+<img width="1910" height="914" alt="f0b22c2546537e45b0c92866db3e1c27" src="https://github.com/user-attachments/assets/2d4ddbc8-09d9-4ba6-8f7f-30724c965233" />
+<img width="1906" height="910" alt="ce4cececed0a0e32cbdf067448a911d3" src="https://github.com/user-attachments/assets/0db6b02a-94d8-4dc1-af38-d8326ec7f101" />
 
-### 1. 数据指标查询与可视化生成
-
-### 2. 触发风控熔断与 SOP 自动检索
 
 ---
 
