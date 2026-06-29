@@ -50,13 +50,14 @@
 │  业务数据沙箱 (Sandbox)                          │
 │  CSV/SQL 处理 · 指标计算 · 熔断判定              │
 └──────────────────────────────────────────────────┘
+```
 ---
 
 ## ✨ 核心特性
 
 * 🤖 **双擎 Agent 架构 (ReAct)**
-  * **Planner Agent**：意图路由与任务拆解。
-  * **Reasoner Agent**：执行状态机，防死循环设计，精准编排工具链。
+  * **Planner Agent**: 意图路由与任务拆解。
+  * **Reasoner Agent**: 执行状态机，防死循环设计，精准编排工具链。
 * 🛡️ **工业级动态风控熔断**
   * 内置时序漂移监控，拦截陈旧历史数据注入（防止 GIGO）。
   * 实时大盘监控（如退货率超标），触发异常后强制阻断常规对话，拉响红色预警。
@@ -67,21 +68,20 @@
 
 ---
 
-## 📂 项目结构
+## 📁 项目结构
 
 ```text
 ecommerce-ai-copilot/
-├── core/                   # Agent 核心逻辑层
-│   ├── agents/             # 包含 PlannerAgent 与 ReasonerAgent
-│   ├── tools/              # 工具算子 (Data, Chart, Knowledge, Report)
+├── core/                       # Agent 核心逻辑层
+│   ├── agents/                 # 包含 PlannerAgent 与 ReasonerAgent
+│   ├── tools/                  # 工具算子 (Data, Chart, Knowledge, Report)
 │   └── morning_report_agent.py # 晨报生成模块
-├── data/                   # 本地数据源与知识库
-│   ├── knowledge/          # Markdown 格式的各平台 SOP 文件及 FAISS 索引
-│   └── *.csv               # 模拟电商明细与 RFM 画像数据
-├── init_knowledge.py       # 向量数据库初始化脚本
-├── main_app.py             # Streamlit 前端交互主入口
-└── requirements.txt        # 依赖清单
-
+├── data/                       # 本地数据源与知识库
+│   ├── knowledge/              # Markdown 格式的各平台 SOP 文件及 FAISS 索引
+│   └── *.csv                   # 模拟电商明细与 RFM 画像数据
+├── init_knowledge.py           # 向量数据库初始化脚本
+├── main_app.py                 # Streamlit 前端交互主入口
+└── requirements.txt            # 依赖清单
 ```
 
 ---
@@ -179,9 +179,6 @@ DASHSCOPE_API_KEY=sk-你的_api_key_填写在这里
 
 ---
 
-## 📄 许可证
-
-本项目采用 **MIT 许可证**。详细信息请参阅 `LICENSE` 文件。
 
 ## 🤝 贡献
 
